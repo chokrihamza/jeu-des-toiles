@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function des_étoiles_carree(n){
+          for(let i=0;i<=n/2;i++){
+              for(let j=0;j<=n;j++){
+                  document.write("*");
+              }
+              document.write("<br>");
+          }
+
+
+
+
+
+
+
+        }
+        function etoiletriangleisocele(n){
+            for(let i=0;i<n;i++){
+                for(let j=0;j<n-i-1;j++){
+                    document.write("&nbsp;&nbsp;");
+                }
+                for(let k=0;k<=i*2;k++){
+                    document.write("*");
+                    
+                }
+                document.write("<br>");
+                
+            }
+             return 0;
+        }
+ 
+
+   function etoiletriangledroit(n){
+    for(let i=0;i<n;i++){
+        for(let j=0;j<i+1;j++){
+            document.write("*");
+                }
+                document.write("</br>");    
+            }
+            
+
+            }
+etoiletriangleisocele(10);
+etoiletriangledroit(10);
+des_étoiles_carree(20);
+
+  </script>
+</body>
+</html>
